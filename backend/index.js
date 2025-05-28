@@ -10,7 +10,7 @@ const flash=require('connect-flash');
 const seedDDb=require('./seedDocAp')
 const seedDb=require('./seed.js');
 //mongoose connection cloud
-const uri=process.env.MONGO_URI;
+const uri=process.env.MONGODB_URI;
 
 mongoose.connect(uri,{
     useNewUrlParser: true,
